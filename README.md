@@ -1,28 +1,23 @@
 # Pull Repos Off Of Github!
 
-- **template of:** vite + react
-- **tailwindcss:** v3.x
+## This project uses:
+- **Tailwindcss:** v3.x
+- **React** v18.x
+- **Vite**
 
-## Started
-```bash
-yarn
-# or `npm install`
+## Get started
+```
+npm install
 ```
 
 ---
 ## Develop
-```bash
-yarn dev
-# or `npm run dev`
+``` 
+npm run dev
 ```
 
----
-## Build
-```bash
-yarn build
-# or `npm run build`
-```
-
+## Template
+### This project is using a template provided by huibizhang/template-vite-react-tailwind-v3
 ---
 <p align="center">
 <img src="./powered-by-vitawind-bright.png">
