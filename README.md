@@ -20,5 +20,5 @@ npm run dev
 ### This project is using a template provided by huibizhang/template-vite-react-tailwind-v3
 ---
 
-![image](https://user-images.githubusercontent.com/39189903/189508158-be97c04f-395a-423d-933e-dca766ec059e.png)
+![image](https://user-images.githubusercontent.com/39189903/189508170-7f8b2546-c576-4a6c-b4a0-f1347c9e540c.png)
 
