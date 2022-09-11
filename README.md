@@ -1,4 +1,5 @@
-# Pull Repos Off Of Github!
+# Pull Github Repos By UserName!
+### Using the Github API this project will retrieve all repos from a user and display the project names. By using pagination, we can go through their list of projects.
 
 ## This project uses:
 - **Tailwindcss:** v3.x
