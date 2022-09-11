@@ -1,5 +1,6 @@
-import axios from "axios";
 import React, { useState } from "react";
+import axios from "axios";
+
 const Card = () => {
   const [userName, setUserName] = useState("");
   const [repos, setRepos] = useState([]);
@@ -7,6 +8,14 @@ const Card = () => {
   function handleSubmitRequest(e) {
     e.preventDefault();
     pullExistingRepos();
+  }
+
+  function listRepos(repo) {
+    return (
+      <div className="row" key={repo.id}>
+        <h4 className="py-1 font-sans text-2xl text-slate-500">{repo.name}</h4>
+      </div>
+    );
   }
 
   function pullExistingRepos() {
@@ -17,19 +26,11 @@ const Card = () => {
       setRepos(res.data);
     });
   }
-
-  function listRepos(repo) {
-    return (
-      <div className="row" key={repo.id}>
-        <h4 className="py-1 font-sans text-2xl text-slate-500">{repo.name}</h4>
-      </div>
-    );
-  }
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center bg-slate-100">
-      <div className="flex h-1/3 w-1/3 flex-col items-center justify-center rounded-lg border border-blue-400/20 bg-slate-200/30 shadow-xl">
+      <div className="flex h-screen w-full flex-col items-center justify-center rounded-lg border border-blue-400/20 bg-slate-200/30 shadow-xl md:h-1/2 md:w-1/3">
         <div>
-          <form className="form flex w-56 flex-col justify-center">
+          <form className="form flex w-full flex-col justify-center md:w-56">
             <input
               type="text"
               value={userName}
