@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./components/card";
-
-function App() {
+const App = () => {
   return (
     <div className="app">
       <Card />
     </div>
   );
-}
+};
 
 export default App;
